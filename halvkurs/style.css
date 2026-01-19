@@ -31,13 +31,13 @@ nav{
 
 .card{
     display:grid;
-    grid-template-areas: "maheen";
+    grid-template-areas: "card";
 
 }
 
 /* Välj nu alla barn till .card */
 .card>*{
-    grid-area: maheen;
+    grid-area: card;
 }
 
 .card>a{
