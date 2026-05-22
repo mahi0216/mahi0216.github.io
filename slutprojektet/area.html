@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .imgBox {
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        grid-area: main;
+    }
+
+    .imgBox img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card {
+
+        border: 1px solid red;
+        padding: 2%;
+        display: grid;
+        grid-template-areas: "main";
+        /* Skapa ett område */
+        justify-content: center;
+        place-items: center;
+        align-items: flex-start;
+      
+
+        @media(width>600px){
+
+            align-items: flex-end;
+
+        }
+    }
+
+    .card .text{
+        grid-area: main;
+        background-color: pink;
+        padding:1%;
+        transform: translateY(2rem);
+
+        
+    }
+    .card h2 {
+        color: white;
+    
+    }
+</style>
+
+<body>
+
+
+    <div class="card">
+
+        <div class="imgBox">
+            <img src="chatheadbanner.png" alt="">
+        </div>
+
+        <div class="text">
+            <h2>Text som ligger ovanpå...</h2>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
