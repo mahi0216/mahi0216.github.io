@@ -1,0 +1,35 @@
+<!-- basic HTML setup -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page title -->
+    <title>HTMX</title>
+
+    <!-- load htmx -->
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8"></script>
+
+    <!-- load css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- navigation will load here -->
+    <header hx-get="comp/nav.html" hx-trigger="load"></header>
+
+    <!-- main content -->
+    <div id="main" hx-get="comp/home.html" hx-trigger="load"></div>
+
+    <!-- footer -->
+    <footer hx-get="comp/footer.html" hx-trigger="load"></footer>
+
+</body>
+</html>
